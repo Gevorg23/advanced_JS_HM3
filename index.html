@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы о продуктах</title>
+
+</head>
+<body>
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #addReview, #viewReviews {
+            margin-bottom: 20px;
+        }
+
+        .product-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-item {
+            margin-bottom: 10px;
+        }
+
+        .delete-btn {
+            cursor: pointer;
+            color: red;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="addReview">
+        <h2>Страница добавления отзыва</h2>
+        <label for="productName">Название продукта:</label>
+        <input type="text" id="productName" required>
+        <br>
+        <label for="reviewText">Текст отзыва:</label>
+        <textarea id="reviewText" required></textarea>
+        <br>
+        <button onclick="addReview()">Добавить отзыв</button>
+    </div>
+
+    <div id="viewReviews">
+        <h2>Страница просмотра отзывов</h2>
+        <ul id="productList" class="product-list"></ul>
+        <div id="reviewsContainer"></div>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
